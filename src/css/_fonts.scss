@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("../assets/fonts/calibri.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/calibri.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../assets/fonts/calibri.otf") format("opentype"), /* Open Type Font */
+  url("../assets/fonts/calibri.svg") format("svg"), /* Legacy iOS */
+  url("../assets/fonts/calibri.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../assets/fonts/calibri.woff") format("woff"), /* Modern Browsers */
+  url("../assets/fonts/calibri.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-18: 18px;
+$font-24: 24px;
+@mixin e-bold-60-px {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+}

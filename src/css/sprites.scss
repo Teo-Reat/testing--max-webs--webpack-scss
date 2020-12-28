@@ -1,9 +1,14 @@
+.document-wrapper {
+  overflow-y: hidden;
+}
+
 .strange {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  //height: 100%;
+  //z-index: -1;
 }
 
 .triangle-0,

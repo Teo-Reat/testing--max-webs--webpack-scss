@@ -12,7 +12,7 @@ module.exports = {
 	plugins: [
 		new CopyPlugin({
 			patterns: [
-				{ from: 'src/assets/images/copy', to: 'images' },
+				{ from: 'src/assets/images/copy', to: 'images/favicon' },
 			],
 			options: {
 				concurrency: 100,

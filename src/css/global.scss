@@ -2,7 +2,8 @@ body {
   font-family: Calibri, sans-serif;
   font-size: $font-18;
   font-weight: 400;
-  position: relative;
+  //position: relative;
+  overflow-x: hidden;
 }
 
 a {

@@ -22,6 +22,12 @@
 
 //Header section
 .header {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  margin-left: -625px;
+  height: 100px;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -66,13 +72,17 @@
 //Main section
 .main {
   overflow: hidden;
+  position: relative;
+  padding: {
+    top: 100px;
+  };
 }
 
 .theme {
   display: flex;
-  min-height: 600px;
+  min-height: 580px;
   padding: {
-    top: 25px;
+    top: 20px;
     bottom: 65px;
   };
 
@@ -117,12 +127,16 @@
     }
 
     &-phone {
-      padding: 20px 32px;
+      font-family: "SF UI Display Medium", sans-serif;
+      padding: 20px 30px;
       border-radius: 0;
       display: block;
       border: 1px solid #e1e1e1;
       background-color: #f8f8f8;
       outline: transparent;
+      max-width: 100%;
+      box-sizing: border-box;
+      font-weight: 500;
     }
 
     &-submit {
@@ -134,12 +148,13 @@
       background: $orange;
       color: white;
       outline: transparent;
+      font-weight: 500;
     }
   }
 
   &__image {
     position: absolute;
-    left: -120px;
+    left: -112px;
 
     &-wrapper {
       position: relative;
@@ -166,7 +181,7 @@
   &__description {
     max-width: 510px;
     text-align: center;
-    margin: 34px auto 0;
+    margin: 5px auto 0;
     line-height: 36px;
     font-size: 24px;
 
@@ -200,8 +215,9 @@
   }
 
   &__num {
-    height: 21px;
-    width: 21px;
+    font-family: "SF UI Display Medium", sans-serif;
+    height: 22px;
+    width: 22px;
     border: 1px solid $orange;
     border-radius: 50%;
     display: flex;
@@ -210,8 +226,8 @@
     color: $orange;
     position: relative;
     margin: {
-      top: 40px;
-      bottom: 40px;
+      top: 30px;
+      bottom: 30px;
       left: auto;
       right: auto;
     };
@@ -233,6 +249,9 @@
     }
 
     &-first {
+      margin: {
+        top: 0;
+      };
       &::before {
         display: none;
       }
@@ -242,7 +261,7 @@
 
 .partners {
   padding: {
-    top: 75px;
+    top: 65px;
     bottom: 80px;
   };
 
@@ -263,6 +282,7 @@
 
   &__description {
     font-size: 24px;
+    line-height: 36px;
     margin: {
       top: 34px;
     };
